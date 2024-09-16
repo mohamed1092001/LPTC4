@@ -1,0 +1,532 @@
+@font-face {
+    font-family: 'Effra';
+    src: url('alfont_com_AlFont_com_Effra_Rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: "cairo", sans-serif;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 2.3vh;
+    line-height: 1.2;
+    font-family: 'Effra';
+}
+
+.page-1 {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+
+}
+
+.page-1 .son {
+    background-image: url(Capture.PNG);
+    height: 100% !important;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    /* margin: auto; */
+}
+
+.page-1 .page-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 50px;
+    flex-direction: column;
+
+}
+
+.page-1 .page-content>div {
+    width: 100%;
+    text-align: center;
+}
+
+
+.page-1 .page-content .title {
+    background-color: #0f2937;
+    color: #fff;
+    width: fit-content;
+    padding: 7px 50px;
+    font-size: 4vh;
+    position: relative;
+    margin: auto;
+}
+
+.page-1 .page-content .title::after {
+    content: " ";
+    position: absolute;
+    top: -3px;
+    right: -13px;
+    width: 53px;
+    height: 7px;
+    background-color: #b31932;
+
+}
+
+.page-1 .page-content .title::before {
+    content: " ";
+    position: absolute;
+    bottom: -3px;
+    left: -13px;
+    width: 53px;
+    height: 7px;
+    background-color: #ff9419;
+}
+
+.page-1 .page-content .description {
+    margin: 3vh 0px;
+    text-align: justify;
+
+
+}
+
+.page-1 .page-content .btn-con {
+    display: flex;
+    gap: 30px;
+    width: fit-content;
+    margin: 0% auto;
+}
+
+.page-1 .page-content .btn-con button {
+    background-color: #8eb6b1;
+    color: #fff;
+    padding: .5vh 4vh;
+    border-radius: .4vw;
+    cursor: pointer;
+}
+
+
+.page-1 .video-box {
+    position: relative;
+    aspect-ratio: 1/.68;
+    overflow: hidden;
+}
+
+.page-1 .video-box video {
+    width: 120%;
+    position: absolute;
+    top: -65%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.page-2 {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    display: none;
+}
+
+.page-2 .son {
+    width: 100%;
+    background-color: #012938;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px 0px;
+    min-height: 100%;
+}
+
+.page-2 .container {
+    width: 65%;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.page-2 .container button {
+    width: calc((100% - 60px) / 3);
+    border: solid 2px #fff;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .9;
+}
+
+
+.page-2 .container button:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 7px #fff;
+    cursor: pointer;
+}
+
+.page-2 .container button img {
+    width: 80%;
+}
+
+.page-2 .back-btn {
+    background-color: #85b8b1;
+    color: #fff;
+}
+
+@media (min-width:0px) and (max-width:700px) {
+
+    .back-btn {
+        width: 40px !important;
+    }
+
+}
+
+/* global */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+section {
+    position: relative;
+}
+
+.back-btn {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    border-radius: 50%;
+    width: 60px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    color: #fff;
+}
+
+.back-btn i {
+    font-size: 20px;
+}
+
+/* details-page */
+
+.details-page {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    display: none;
+    text-align: center;
+}
+
+.details-page .son {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 20px 0px;
+    min-height: 100%;
+}
+
+.details-page .sup-logo {
+    width: 25%;
+    aspect-ratio: 1 / 0.7;
+    object-fit: cover;
+}
+
+.details-page .son p {
+    width: 85%;
+    color: #fff;
+    font-size: 2.06vh;
+    text-align: justify;
+}
+
+.moltaka .hash {
+    text-align: center;
+}
+
+.details-page .son .mid-img {
+    width: 93%;
+    margin-left: auto;
+}
+
+.details-page .son .vid-con {
+    width: 85%;
+}
+
+.details-page .son .vid-con video {
+    width: 100%;
+}
+
+.details-page .son .qr-box {
+    width: 85%;
+    border-top: solid 2px #fff;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+}
+
+.details-page .son .qr-box p {
+    width: fit-content;
+    font-size: 2.5vh;
+}
+
+.details-page .son .qr-box img {
+    background-color: #fff;
+    padding: 10px;
+    width: 100px;
+}
+
+
+.motargem .son {
+    background-color: #85b8b1;
+}
+
+.motargem .back-btn {
+    background-color: #012938;
+    color: #fff;
+}
+
+.ershaad .son {
+    background-color: #85b8b1;
+}
+
+.ershaad .back-btn {
+    background-color: #012938;
+    color: #fff;
+}
+
+.moltaka .son {
+    background: #012938;
+}
+
+.moltaka .hash {
+    color: #85B8B1 !important;
+}
+
+.moltaka .back-btn {
+    background: #85B8B1;
+}
+
+.moltaka .son .mid-img {
+    width: 57%;
+}
+
+.mobadra .son {
+    background: #85B8B1;
+    gap: 1vh !important;
+}
+
+.mobadra .back-btn {
+    background: #012938;
+}
+
+.sec-title {
+    color: #012938;
+    font-size: 2.8vh;
+    margin-bottom: 2vh;
+}
+
+.goals-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.goals-box .goal {
+    border-top: solid 2px #fff;
+    width: 50%;
+    direction: rtl;
+    text-align: right;
+    font-size: clamp(0.875rem, 1vw + 0.5rem, 1rem);
+}
+
+.dalil .son {
+    background: #780A47;
+}
+
+.dalil .back-btn {
+    background: #E1912E;
+}
+
+.dalil .mid-img {
+    margin-left: 0px !important;
+    margin-right: auto;
+}
+
+/* @media (min-width:0px) and (max-width:700px) {
+    .goals-box {
+        gap: 40px;
+    }
+
+    .goals-box .goal {
+        width: 100%;
+        padding: 0% !important;
+    }
+
+} */
+
+.goals-box .goal:nth-child(1) {
+    padding-left: 4vw;
+}
+
+.goals-box .goal .num {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border: solid 2px #fff;
+    transform: translate(-50px, -40%);
+    background-color: #85B8B1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7vh;
+}
+
+.goals-box .goal p {
+    width: 100%;
+    font-size: 1.2vh;
+}
+
+.mobadra .mid-img {
+    margin-right: auto;
+    margin-left: 0px !important;
+}
+
+.korsy .son {
+    background: #85B8B1;
+    gap: 1.7vh;
+}
+
+.korsy p:nth-child(3){
+    font-size: 1.86vh !important;
+}
+
+.korsy .back-btn {
+    background: #012938;
+}
+
+.korsy .son .mid-img {
+    width: 47%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+.korsy .son,
+.moltaka .son {
+    padding-bottom: 0px !important;
+}
+
+.marsad .son {
+    background: #012938;
+}
+
+.marsad .back-btn {
+    background: #85B8B1;
+}
+
+.marsad .mid-img {
+    margin-left: 0px !important;
+    margin-right: auto;
+}
+
+.trainning1 .son {
+    background: #780A47;
+}
+
+.trainning1 .son {
+    padding-bottom: 0%;
+}
+
+.trainning1 .back-btn {
+    background: #E1912E;
+}
+
+.quality .son {
+    background: #780A47;
+}
+
+.quality .son {
+    padding-bottom: 0%;
+}
+
+.quality .back-btn {
+    background: #E1912E;
+}
+
+.trainning1 .mid-img {
+    margin-left: 0% !important;
+    margin-right: auto;
+
+}
+
+
+.trainning2 .son {
+    background: #012938;
+}
+
+
+
+.trainning2 .back-btn {
+    background: #85B8B1;
+}
+
+.trainning2 .mid-img {
+    margin-left: 0% !important;
+    margin-right: auto;
+}
+
+.quality2 .son {
+    background: #780A47;
+}
+
+.quality2 .back-btn {
+    background: #E1912E;
+}
+
+.quality2 .mid-img {
+    margin-left: 0% !important;
+    margin-right: auto;
+
+}
+
+
+
+/* test */
+section {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.son {
+    aspect-ratio: 5625 / 10000;
+    width: auto !important;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+}
+
+@media (min-width:0px) and (max-width:600px) {
+    .son {
+        aspect-ratio: 5625 / 10000;
+        width: 100vw !important;
+        height: auto !important;
+        margin: auto;
+    }
+}
