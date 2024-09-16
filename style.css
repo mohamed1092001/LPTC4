@@ -153,8 +153,8 @@
 }
 
 .page-2 .container {
-    width: 65%;
-    gap: 12px;
+    width: 70%;
+    gap: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -163,7 +163,7 @@
 
 
 .page-2 .container button {
-    width: calc((100% - 24px) / 3);
+    width: calc((100% - 30px) / 3);
     border: solid 2px #fff;
     aspect-ratio: 1/1;
     border-radius: 50%;
