@@ -128,7 +128,7 @@
     transform: translateX(-50%);
 }
 
-.page-1 .page-content .description span{
+.page-1 .page-content .description span {
     font-size: 2vh;
 }
 
@@ -211,12 +211,19 @@ section {
     left: 10%;
     top: 5%;
     border-radius: 50%;
-    width: 30px !important;
+    width: 40px !important;
     aspect-ratio: 1/1;
     cursor: pointer;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
+.back-btn i {
+    font-size: 16px;
+}
 
 
 /* details-page */
