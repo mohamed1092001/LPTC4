@@ -94,9 +94,8 @@
 
 .page-1 .page-content .description {
     margin: 3vh 0px;
-    text-align: justify;
-
-
+    text-align: center;
+    font-size: 2.049vh;
 }
 
 .page-1 .page-content .btn-con {
