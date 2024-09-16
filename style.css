@@ -282,13 +282,14 @@ section {
 
 .details-page .son .qr-box p {
     width: fit-content;
-    font-size: 2.5vh;
+    font-size: 2vh;
 }
 
 .details-page .son .qr-box img {
     background-color: #fff;
-    padding: .7VH;
-    width: 10VH;
+    padding: .3vh;
+    width: 6VH;
+
 }
 
 
